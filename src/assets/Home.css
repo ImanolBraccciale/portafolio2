@@ -1,0 +1,46 @@
+.containerHoome{
+    background-color: #040404;
+    width: 230vh;
+    height: 81vh;
+
+}
+.containerPacman{
+    height: 500px;
+    width: 500px;
+padding-top: 90px;
+padding-left: 70px;
+}
+.eclipse {
+background-color: #FFFF2E;
+height: 400px;
+width: 400px;
+border-radius: 500px;
+}
+
+.poligono{
+    background-color: #040404;
+    width: 200px;
+    height: 300px;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    position: absolute;
+    bottom: 190px;
+    left: 270px;
+}
+
+.coinContainer {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 10px; /* Espacio entre las instancias de CoinSVG (puedes ajustarlo según tus preferencias) */
+  }
+  
+  .coinGrid {
+    display: grid;
+    grid-auto-flow: column; /* Rellena automáticamente en dirección de columna */
+    gap: 10px; /* Espacio entre las instancias de CoinSVG (puedes ajustarlo según tus preferencias) */
+  }
+  
+  .coinGrid > svg {
+    width: 31px; /* Establece el ancho de cada instancia de CoinSVG */
+    max-width: 100%; /* Ocupa todo el espacio disponible en cada celda de la cuadrícula */
+  }
+  

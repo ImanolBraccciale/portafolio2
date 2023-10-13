@@ -5,7 +5,7 @@ import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 import Home from "./Home/Home"
 
-export const App : React.FC<{}>=()=> {
+ const App : React.FC<{}>=()=> {
   
   return (
     <div >
@@ -23,3 +23,4 @@ export const App : React.FC<{}>=()=> {
   );
 }
 
+export default App;

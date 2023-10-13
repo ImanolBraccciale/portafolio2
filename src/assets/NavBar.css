@@ -1,0 +1,41 @@
+.container{
+    
+    background-color: #040404;  
+    display: grid;
+    justify-content: end; 
+    height: 120px;
+    align-items: center;
+    border: 5px solid #392AD7;
+}
+
+.navButtons{
+    margin-right: 90px;
+    
+}
+
+.navButtons button a {
+    text-decoration: none;
+    outline: none;
+    color: #FFFF2E;
+}
+.navButtons button {
+    
+    margin: 20px; 
+    background-color: #040404 ;
+    width: 150px;
+    height: 55px;
+    border-radius: 23px;
+  
+}
+.navButtons button:nth-child(1) {
+    border:5px solid #C09C03 ; 
+}
+
+.navButtons button:nth-child(2) {
+    border:5px solid #4294FE; 
+}
+
+.navButtons button:nth-child(3) {
+
+    border:5px solid #21B202 ; 
+}
