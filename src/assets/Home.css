@@ -27,20 +27,15 @@ border-radius: 500px;
     left: 270px;
 }
 
-.coinContainer {
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    gap: 10px; /* Espacio entre las instancias de CoinSVG (puedes ajustarlo según tus preferencias) */
-  }
-  
-  .coinGrid {
-    display: grid;
-    grid-auto-flow: column; /* Rellena automáticamente en dirección de columna */
-    gap: 10px; /* Espacio entre las instancias de CoinSVG (puedes ajustarlo según tus preferencias) */
-  }
-  
-  .coinGrid > svg {
-    width: 31px; /* Establece el ancho de cada instancia de CoinSVG */
-    max-width: 100%; /* Ocupa todo el espacio disponible en cada celda de la cuadrícula */
-  }
+.Coins{
+  background-image: url("./coin.png");
+  margin-top: -300px;
+  margin-left: 500px;
+  width: auto;
+  height: 30px;
+  background-repeat:repeat-x; 
+  background-size: 50px ;
+
+ 
+}
   
