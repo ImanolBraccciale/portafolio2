@@ -1,41 +1,45 @@
-.container{
-    
-    background-color: #040404;  
+.container {
+ 
+    background-color: #040404;
     display: grid;
-    justify-content: end; 
-    height: 120px;
+    justify-content: end;
+    height: 16%;
     align-items: center;
-    border: 5px solid #392AD7;
-}
-
-.navButtons{
+    /* border: 1px solid #392AD7; */
+  }
+  
+  .navButtons {
     margin-right: 90px;
-    
-}
-
-.navButtons button a {
+  }
+  
+  .navLink {
     text-decoration: none;
     outline: none;
     color: #FFFF2E;
-}
-.navButtons button {
-    
-    margin: 20px; 
-    background-color: #040404 ;
+    margin: 20px;
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
     width: 150px;
     height: 55px;
     border-radius: 23px;
+    position: relative;
+    z-index: 220;
+  }
   
-}
-.navButtons button:nth-child(1) {
-    border:5px solid #C09C03 ; 
-}
-
-.navButtons button:nth-child(2) {
-    border:5px solid #4294FE; 
-}
-
-.navButtons button:nth-child(3) {
-
-    border:5px solid #21B202 ; 
-}
+  .navLink:nth-child(1) {
+    border: 5px solid #C09C03;
+    
+  }
+  
+  .navLink:nth-child(2) {
+    border: 5px solid #4294FE;
+  }
+  
+  .navLink:nth-child(3) {
+    border: 5px solid #21B202;
+  }
+  
+  .navLink:nth-child(4) {
+    border: 5px solid #E25106;
+  }
+  

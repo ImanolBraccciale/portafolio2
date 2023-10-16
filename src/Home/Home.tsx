@@ -1,37 +1,81 @@
 import React, { useState } from "react"
 import NavBar from "../components/NavBar/NavBar"
 import "../assets/Home.css"
-
+ 
 const Home: React.FC<{}> = () => {
 
     const [animationStarted, setAnimationStarted] = useState(false);
-    const [visible, setVisible] = useState(false);
-    
     const startAnimation = () => {
         setAnimationStarted(true);
-        setVisible(true)
+
     };
- 
+
+
+    const style={
+        span1:{
+           animation: "moveBackground 9s linear infinite",
+           left:10+"%",
+           
+        },
+        span5:{
+           animation: "moveBackground 4.8s linear infinite",
+           left:24+"%"
+        },
+        span4:{
+           animation: "moveBackground 11s linear infinite",
+           left:58+"%"
+        },
+        span3:{
+           animation: "moveBackground 7.3s linear infinite",
+           left:79+"%"
+        },
+        span2:{
+           animation: "moveBackground 6s linear infinite",
+        }
+    }
 
     return (
-        <div>
-            <div className="containerHoome">
-            <NavBar />
-                <div className={`containerPacman ${animationStarted ? "animationStarted" : ""}`} onClick={startAnimation}>
-                    <div className="pacman" />
-                    <div className="pacman-mouth" />
-                </div>
-                <div className="coinContainer">
+        <div className="containerHoome">
 
-                    <div className={`coin ${animationStarted ? "invisible" : ""}`} />
-                    <div className={`coin1 ${animationStarted ? "invisible" : ""}`}/>
-                    <div className={`coin2 ${animationStarted ? "invisible" : ""}`}/>
-                    <div className={`coin3 ${animationStarted ? "invisible" : ""}`}/>
-                    <div className={`coin4 ${animationStarted ? "invisible" : ""}`}/>
- 
-                </div>
+
+            <NavBar />
+
+            <div className={`containerPacman ${animationStarted ? "animationStarted" : ""}`} onClick={startAnimation}>
+                <div className="pacman" />
+                <div className="pacman-mouth" />
+            </div>
+            <div className="coinContainer">
+
+                <div className={`coin ${animationStarted ? "invisible" : ""}`} />
+                <div className={`coin1 ${animationStarted ? "invisible" : ""}`} />
+                <div className={`coin2 ${animationStarted ? "invisible" : ""}`} />
+                <div className={`coin3 ${animationStarted ? "invisible" : ""}`} />
+                <div className={`coin4 ${animationStarted ? "invisible" : ""}`} />
+
             </div>
 
+            <div className="texto">
+
+            <p className="p1">
+                Soy Imanol Bracciale, desarrollador web.<br />
+                A través de este portafolio, te invito a explorar mi trabajo,
+                conocer mis logros y descubrir cómo mis habilidades
+                y pasión se traducen en resultados tangibles.<br />
+            </p>
+
+            <h1 className="tittleHome">WELCOME <br />TO MY <br />PORTFOLIO</h1>
+            </div>
+            <div className="pez">
+    
+            <span style={style.span1}/>
+
+            <span style={style.span2}/>
+            <span style={style.span3}/>
+            <span style={style.span4}/>
+            <span style={style.span5}/>
+
+
+            </div>
         </div>)
 }
 
