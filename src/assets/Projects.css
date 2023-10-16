@@ -10,7 +10,7 @@
   height: 25vw;
   border: 5px solid #402EF6;
   margin-left: 20vw;
-  margin-top: 3vw;
+  margin-top: 12vw;
   border-radius: 16px;
   position: absolute;
 }
@@ -23,4 +23,8 @@
   margin-top: 3vw;
   border-radius: 16px;
   position: absolute;
+}
+
+.BALL{
+z-index: 900;
 }
