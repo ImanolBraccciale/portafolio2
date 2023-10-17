@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from "react";
 
 const Ball: React.FC = () => {
+    //tamaño y velocidad de la pelota, junto con tamaño maximo de la ventana
   const RADIUS = 10;
   const WIDTH = window.innerWidth;
   const HEIGHT = window.innerHeight;
   const SPEED = 7;
-
+//iniciara en el medio de la pantalla
   const [coord, setCoord] = useState({ x: WIDTH / 2, y: HEIGHT / 2 });
+  //tendra diferentes velocidades
   const [delta, setDelta] = useState({
     x: Math.random() * SPEED * 2 - SPEED,
     y: Math.random() * SPEED * 2 - SPEED,
   });
 
   useEffect(() => {
+    //se usara para trabar con la etiqueta canvas
     const canvas = document.getElementById("canvas") as HTMLCanvasElement;
     const ctx = canvas.getContext("2d");
 
@@ -20,14 +23,16 @@ const Ball: React.FC = () => {
       console.error("Canvas context not supported.");
       return;
     }
-
+    //logica de rebote, dibujo de pelota y el rebote en divs
     const tick = () => {
+        //en cada
       const newx = coord.x + delta.x;
       const newy = coord.y + delta.y;
-      const collisionDiv = document.getElementById("collision-div");
-
-      if (collisionDiv) {
+    //idemtifica la etiqueta que tendra que colisionar      
+    const collisionDivs = document.querySelectorAll(".collision-div");
+      collisionDivs.forEach((collisionDiv) => {
         const rect = collisionDiv.getBoundingClientRect();
+  
         if (
           newx + RADIUS > rect.left &&
           newx - RADIUS < rect.right &&
@@ -42,14 +47,15 @@ const Ball: React.FC = () => {
             Math.abs(newy + RADIUS - rect.top),
             Math.abs(newy - RADIUS - rect.bottom)
           );
-
+  
           if (overlapX < overlapY) {
             delta.x = -delta.x;
           } else {
             delta.y = -delta.y;
           }
         }
-      }
+      });
+      //rebote en los bordes del navegador
 
       if (newx + RADIUS > WIDTH || newx - RADIUS < 0) {
         delta.x = -delta.x;
@@ -59,7 +65,7 @@ const Ball: React.FC = () => {
       }
 
       setCoord({ x: newx, y: newy });
-
+      //se dibuja la pe
       requestAnimationFrame(draw);
     };
 
@@ -75,6 +81,8 @@ const Ball: React.FC = () => {
   }, [coord, delta]);
 
   return (
+   <div>
+
     <canvas
       id="canvas"
       style={{
@@ -82,7 +90,16 @@ const Ball: React.FC = () => {
       }}
       width={WIDTH}
       height={HEIGHT}
-    ></canvas>
+      ></canvas>
+    <canvas
+      id="canvas"
+      style={{
+        position: "fixed",
+      }}
+      width={WIDTH}
+      height={HEIGHT}
+      ></canvas>
+    </div>
   );
 };
 
