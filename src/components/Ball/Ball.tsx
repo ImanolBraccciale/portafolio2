@@ -1,104 +1,107 @@
 import React, { useState, useEffect } from "react";
 
 const Ball: React.FC = () => {
-    //tamaño y velocidad de la pelota, junto con tamaño maximo de la ventana
   const RADIUS = 10;
   const WIDTH = window.innerWidth;
   const HEIGHT = window.innerHeight;
   const SPEED = 7;
-//iniciara en el medio de la pantalla
-  const [coord, setCoord] = useState({ x: WIDTH / 2, y: HEIGHT / 2 });
-  //tendra diferentes velocidades
-  const [delta, setDelta] = useState({
-    x: Math.random() * SPEED * 2 - SPEED,
-    y: Math.random() * SPEED * 2 - SPEED,
-  });
+  const numBalls = 12; // Cantidad de pelotas
+  const balls = Array.from({ length: numBalls }, (_, index) => ({
+    x: WIDTH / 2,
+    y: HEIGHT / 2,
+    delta: {
+      x: Math.random() * SPEED * 2 - SPEED,
+      y: Math.random() * SPEED * 2 - SPEED,
+    },
+  }));
 
   useEffect(() => {
-    //se usara para trabar con la etiqueta canvas
-    const canvas = document.getElementById("canvas") as HTMLCanvasElement;
-    const ctx = canvas.getContext("2d");
-
-    if (!ctx) {
-      console.error("Canvas context not supported.");
-      return;
-    }
-    //logica de rebote, dibujo de pelota y el rebote en divs
-    const tick = () => {
-        //en cada
-      const newx = coord.x + delta.x;
-      const newy = coord.y + delta.y;
-    //idemtifica la etiqueta que tendra que colisionar      
+    const canvasElements = document.querySelectorAll(".canvas");
     const collisionDivs = document.querySelectorAll(".collision-div");
-      collisionDivs.forEach((collisionDiv) => {
-        const rect = collisionDiv.getBoundingClientRect();
-  
-        if (
-          newx + RADIUS > rect.left &&
-          newx - RADIUS < rect.right &&
-          newy + RADIUS > rect.top &&
-          newy - RADIUS < rect.bottom
-        ) {
-          const overlapX = Math.min(
-            Math.abs(newx + RADIUS - rect.left),
-            Math.abs(newx - RADIUS - rect.right)
-          );
-          const overlapY = Math.min(
-            Math.abs(newy + RADIUS - rect.top),
-            Math.abs(newy - RADIUS - rect.bottom)
-          );
-  
-          if (overlapX < overlapY) {
-            delta.x = -delta.x;
-          } else {
-            delta.y = -delta.y;
+
+    const animateBalls = () => {
+      canvasElements.forEach((canvas, index) => {
+        if (canvas instanceof HTMLCanvasElement) {
+          const ctx = canvas.getContext("2d");
+
+          if (!ctx) {
+            console.error("Canvas context not supported.");
+            return;
           }
+
+          const ball = balls[index];
+
+          const newx = ball.x + ball.delta.x;
+          const newy = ball.y + ball.delta.y;
+
+          // Lógica de colisión con elementos "collision-div"
+          collisionDivs.forEach((collisionDiv) => {
+            const rect = collisionDiv.getBoundingClientRect();
+
+            if (
+              newx + RADIUS > rect.left &&
+              newx - RADIUS < rect.right &&
+              newy + RADIUS > rect.top &&
+              newy - RADIUS < rect.bottom
+            ) {
+              const overlapX = Math.min(
+                Math.abs(newx + RADIUS - rect.left),
+                Math.abs(newx - RADIUS - rect.right)
+              );
+              const overlapY = Math.min(
+                Math.abs(newy + RADIUS - rect.top),
+                Math.abs(newy - RADIUS - rect.bottom)
+              );
+
+              if (overlapX < overlapY) {
+                ball.delta.x = -ball.delta.x;
+              } else {
+                ball.delta.y = -ball.delta.y;
+              }
+            }
+          });
+
+          if (newx + RADIUS > WIDTH || newx - RADIUS < 0) {
+            ball.delta.x = -ball.delta.x;
+          }
+          if (newy + RADIUS > HEIGHT || newy - RADIUS < 0) {
+            ball.delta.y = -ball.delta.y;
+          }
+
+          ball.x = newx;
+          ball.y = newy;
+
+          draw(ctx, ball);
         }
       });
-      //rebote en los bordes del navegador
 
-      if (newx + RADIUS > WIDTH || newx - RADIUS < 0) {
-        delta.x = -delta.x;
-      }
-      if (newy + RADIUS > HEIGHT || newy - RADIUS < 0) {
-        delta.y = -delta.y;
-      }
-
-      setCoord({ x: newx, y: newy });
-      //se dibuja la pe
-      requestAnimationFrame(draw);
+      requestAnimationFrame(animateBalls);
     };
 
-    const draw = () => {
-      ctx.fillStyle = "white";
+    const draw = (ctx: CanvasRenderingContext2D, ball: { x: number, y: number, delta: { x: number, y: number } }) => {
+      ctx.fillStyle = "green";
       ctx.clearRect(0, 0, WIDTH, HEIGHT);
       ctx.beginPath();
-      ctx.arc(coord.x, coord.y, RADIUS, 0, Math.PI * 2);
+      ctx.arc(ball.x, ball.y, RADIUS, 0, Math.PI * 2);
       ctx.fill();
     };
 
-    requestAnimationFrame(tick);
-  }, [coord, delta]);
+    requestAnimationFrame(animateBalls);
+  }, []);
 
   return (
-   <div>
-
-    <canvas
-      id="canvas"
-      style={{
-        position: "fixed",
-      }}
-      width={WIDTH}
-      height={HEIGHT}
-      ></canvas>
-    <canvas
-      id="canvas"
-      style={{
-        position: "fixed",
-      }}
-      width={WIDTH}
-      height={HEIGHT}
-      ></canvas>
+    <div>
+      {Array.from({ length: numBalls }, (_, index) => (
+        <canvas
+          key={index}
+          className="canvas"
+          style={{
+            position: "fixed",
+          }}
+          width={WIDTH}
+          height={HEIGHT}
+        ></canvas>
+        )  )}
     </div>
   );
 };
