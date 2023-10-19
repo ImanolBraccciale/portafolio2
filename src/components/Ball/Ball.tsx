@@ -97,6 +97,7 @@ const Ball: React.FC = () => {
           className="canvas"
           style={{
             position: "fixed",
+      
           }}
           width={WIDTH}
           height={HEIGHT}

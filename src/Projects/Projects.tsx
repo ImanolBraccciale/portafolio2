@@ -10,6 +10,7 @@ const Projects: React.FC = () => {
             <Ball />
             <div className="containerHoome">
                 <span className="Span1 collision-div" />
+                <span className="Span2 collision-div" />
                 <NavBar />
             </div>
         </div>
