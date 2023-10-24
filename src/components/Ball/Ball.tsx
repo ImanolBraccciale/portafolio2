@@ -4,8 +4,8 @@ const Ball: React.FC = () => {
   const RADIUS = 7;
   const WIDTH = window.innerWidth;
   const HEIGHT = window.innerHeight;
-  const SPEED = 7;
-  const numBalls = 40; // Cantidad de pelotas
+  const SPEED = 3;
+  const numBalls = 80; // Cantidad de pelotas
   const balls = Array.from({ length: numBalls }, (_, index) => ({
     x: WIDTH / 2,
     y: HEIGHT / 2,
