@@ -25,6 +25,13 @@ const Skills: React.FC = () => {
                         <div className="pelota" />
                         <div className="pelota" />
                     </div>
+                    <ul className='lista'>
+                        <li>aaaaa</li>
+                        <li>saaaaa</li>
+                        <li>daaaa</li>
+                        <li>aaaas</li>
+                        <li>caaaa</li>
+                    </ul>
                 </div>
 
                 <div className="ghost2">
@@ -37,6 +44,13 @@ const Skills: React.FC = () => {
                     <div className="pelota2" />
                     <div className="pelota2" />
                     <div className="pelota2" />
+                    <ul className='lista'>
+                        <li>aaaaa</li>
+                        <li>saaaaa</li>
+                        <li>daaaa</li>
+                        <li>aaaas</li>
+                        <li>caaaa</li>
+                    </ul>
                 </div>
                 <div className="ghost3">
                     <div className='containerEyes'>
@@ -48,6 +62,13 @@ const Skills: React.FC = () => {
                     <div className="pelota3" />
                     <div className="pelota3" />
                     <div className="pelota3" />
+                    <ul className='lista'>
+                        <li>aaaaa</li>
+                        <li>saaaaa</li>
+                        <li>daaaa</li>
+                        <li>aaaas</li>
+                        <li>caaaa</li>
+                    </ul>
                 </div>
             </div>
         </div>
