@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const Ball: React.FC = () => {
-  const RADIUS = 10;
+  const RADIUS = 7;
   const WIDTH = window.innerWidth;
   const HEIGHT = window.innerHeight;
   const SPEED = 7;
-  const numBalls = 12; // Cantidad de pelotas
+  const numBalls = 40; // Cantidad de pelotas
   const balls = Array.from({ length: numBalls }, (_, index) => ({
     x: WIDTH / 2,
     y: HEIGHT / 2,
@@ -79,7 +79,7 @@ const Ball: React.FC = () => {
     };
 
     const draw = (ctx: CanvasRenderingContext2D, ball: { x: number, y: number, delta: { x: number, y: number } }) => {
-      ctx.fillStyle = "green";
+      ctx.fillStyle = "pink";
       ctx.clearRect(0, 0, WIDTH, HEIGHT);
       ctx.beginPath();
       ctx.arc(ball.x, ball.y, RADIUS, 0, Math.PI * 2);

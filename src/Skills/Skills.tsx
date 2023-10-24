@@ -1,8 +1,8 @@
-import React from "react"
+import React, { useEffect, useState } from 'react';
 import NavBar from "../components/NavBar/NavBar"
 import "../assets/Skills.css"
-import Ball from "../components/Ball/Ball"
-function Skills() {
+import Eye from '../components/EyeBalls/EyesBalls';
+const Skills: React.FC = () => {
 
     return (
         <div className="containerHoome">
@@ -15,12 +15,10 @@ function Skills() {
 
             <div className="containerGhost">
                 <div className="ghost1">
+                    <div className='containerEyes'>
 
-                    <div className="eyes">
-                        <div />
-                    </div>
-                    <div className="eyesL">
-                        <div />
+                        <Eye id={1} />
+                        <Eye id={6} />
                     </div>
                     <div>
                         <div className="pelota" />
@@ -30,22 +28,22 @@ function Skills() {
                 </div>
 
                 <div className="ghost2">
-                    <div className="eyes">
-                        <div />
-                    </div>
-                    <div className="eyesL">
-                        <div />
+                    <div className='containerEyes'>
+                        <Eye id={2} />
+                        <div style={{ width: '2vw' }} />
+                        <Eye id={4} />
+
                     </div>
                     <div className="pelota2" />
                     <div className="pelota2" />
                     <div className="pelota2" />
                 </div>
                 <div className="ghost3">
-                    <div className="eyes">
-                        <div />
-                    </div>
-                    <div className="eyesL">
-                        <div />
+                    <div className='containerEyes'>
+                        <Eye id={3} />
+                        <div style={{ width: '2vw' }} />
+                        <Eye id={5} />
+
                     </div>
                     <div className="pelota3" />
                     <div className="pelota3" />
@@ -55,4 +53,5 @@ function Skills() {
         </div>
     )
 }
-export default Skills
+
+export default Skills;

@@ -1,0 +1,16 @@
+ 
+.eyes {
+    position: absolute;
+    z-index: 100;
+    background-color: aliceblue;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+  }
+.iris:not(a) {
+    background-color: #000000;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+  }
+  

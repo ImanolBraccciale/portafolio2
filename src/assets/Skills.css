@@ -50,7 +50,7 @@
   background-color: #DC4E07;
 }
 
-.pelota:not(ghost1) {
+.pelota:not(.ghost) {
   border-radius: 170px 170px 0 0;
   background-color: #DC4E07;
   margin-top: 25vw;
@@ -60,7 +60,7 @@
   border-radius: 50%;
 }
 
-.pelota2:not(ghost2) {
+.pelota2:not(.ghost) {
   border-radius: 170px 170px 0 0;
   background-color: #4294FE;
   margin-top: 25vw;
@@ -70,7 +70,7 @@
   border-radius: 50%;
 }
 
-.pelota3:not(ghost3) {
+.pelota3:not(.ghost) {
   border-radius: 170px 170px 0 0;
   background-color: #21B202;
   margin-top: 25vw;
@@ -88,69 +88,24 @@
   background-color: #21B202;
 }
 
-.eyes:not(.ghost1) {
+ 
+.eyes:not(ghost) {
   position: absolute;
   z-index: 100;
   background-color: aliceblue;
   width: 5vw;
   height: 5vw;
   border-radius: 50%;
-  z-index: 20;
-  margin-left: -8vw;
-  margin-top: -8vw;
+ 
+ 
 }
-.eyesL:not(.ghost1) {
+
+.containerEyes:not(ghost){
   position: absolute;
-  z-index: 100;
-  background-color: aliceblue;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  z-index: 20;
-  margin-left: 8vw;
-  margin-top: -8vw;
+  height: 1vw;
+  width: 17vw;
+  margin-bottom: 6vw;
 }
-.eyes:not(.ghost2) {
-  position: absolute;
-  z-index: 100;
-  background-color: aliceblue;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  z-index: 20;
-  margin-left: -8vw;
-  margin-top: -8vw;
-}
-.eyesL:not(.ghost2) {
-  position: absolute;
-  z-index: 100;
-  background-color: aliceblue;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  z-index: 20;
-  margin-left: 8vw;
-  margin-top: -8vw;
-}
-.eyes:not(.ghost3) {
-  position: absolute;
-  z-index: 100;
-  background-color: aliceblue;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  z-index: 20;
-  margin-left: -8vw;
-  margin-top: -8vw;
-}
-.eyesL:not(.ghost3) {
-  position: absolute;
-  z-index: 100;
-  background-color: aliceblue;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  z-index: 20;
-  margin-left: 8vw;
-  margin-top: -8vw;
-}
+
+
+ 
