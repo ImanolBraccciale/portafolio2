@@ -74,6 +74,7 @@ align-items: center;
   top: 55%;
   left: 5%;
   z-index: 1;
+  animation: vibrate 1s linear infinite; /* Aplica la animación constantemente */
 }
 
 .pacman {
@@ -85,11 +86,9 @@ align-items: center;
   margin-left: 15px;
   margin-top: 15px;
   position: absolute;
-  /* Añadido para que la posición absoluta funcione */
-  
+ 
   z-index: 1;
 }
-
 .pacman-mouth {
   position: absolute;
   border-top: 35px solid transparent;
@@ -122,6 +121,36 @@ align-items: center;
     /* Hasta el borde derecho de la pantalla */
     opacity: 0;
   }
+}
+@keyframes vibrate {
+  0% {
+    transform: translate(-1px, -1px);
+  }
+  25% {
+    transform: translate(1px, 1px);
+  }
+  50% {
+    transform: translate(-1px, -1px);
+  }
+  75% {
+    transform: translate(1px, 1px);
+  }
+  100% {
+    transform: translate(-1px, -1px);
+  }
+}
+
+.pacman {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  background-color: yellow;
+  margin-left: 15px;
+  margin-top: 15px;
+  position: absolute;
+  animation: vibrate 1s linear infinite; /* Aplica la animación constantemente */
+  z-index: 1;
 }
 
 .coinContainer {
