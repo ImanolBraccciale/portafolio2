@@ -4,6 +4,7 @@ import Projects from "./Projects/Projects"
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 import Home from "./Home/Home"
+import About from "./About/About";
 
  const App : React.FC<{}>=()=> {
   
@@ -16,6 +17,7 @@ import Home from "./Home/Home"
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Skills" element={<Skills />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </div>
     </Router>
