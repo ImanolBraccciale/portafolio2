@@ -1,16 +1,18 @@
-.containerAbout{
+.containerAbout {
     background-color: #040404;
     width: 100%;
     height: 100vh;
 }
-.cloud{
+
+.cloud {
     background-image: url("../assets/cloud.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 13vw;
     height: 8vw;
 }
-.brick{
+
+.brick {
     background-image: url("../assets/brick.jpg");
     background-size: contain;
     bottom: 0;
@@ -19,48 +21,75 @@
     position: absolute;
 }
 
-.p{
-    color: aliceblue;
-    background-color: #D54B00;
-    width: 23vw;
+.containerP {
 
-    margin-left: 40%;
-    margin-top: -20%;
-    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53vw;
+    height: 18vw;
+    background-color: #d54b00e1;
     border-top: 1px solid #ffff;
     border-left: 1px solid #ffff;
     border-right: 1px solid #6b5c5c;
     border-bottom: 1px solid #6b5c5c;
+    margin-left: 25%;
+    margin-top: -20%;
 }
-.containerButton{
+
+.photoAbout {
+    background-position: center;
+    background-image: url("../assets/me.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 13vw;
+    height: 13vw;
+    border-radius: 100%;
+    margin-right: 3vw;
+}
+
+.p {
+    color: aliceblue;
+    width: 30vw;
+}
+
+.containerButton {
     display: flex;
     justify-content: space-around;
-
     width: 20vw;
     align-items: center;
     margin-top: 3vw;
     margin-left: 40vw;
 }
 
-.button{
+.button {
     border-radius: 3px;
     background-color: #E79C21;
     border-top: 3px solid #9C4A00;
     border-left: 3px solid #9C4A00;
     border-right: 3.4px solid #272015;
     border-bottom: 3.4px solid #251f16;
-   width: 5vw;
-   height: 5vw;
-   animation: cambioColorFondo 0.7s linear infinite alternate ; /* 5s para una transición de 5 segundos */
-   cursor: pointer;
+    width: 5vw;
+    height: 5vw;
+    animation: cambioColorFondo 0.7s linear infinite alternate;
+    cursor: pointer;
 }
-.linkedin{
+
+.linkedin {
 
     background-image: url("../assets/1.png");
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 2vw 2vw;
     background-position: center;
-    box-shadow: 22px 22px 42px rgba(0, 0, 0, 0.5); 
+   
+}
+.gitHUB {
+
+    background-image: url("../assets/git.png");
+    background-repeat: no-repeat;
+    background-size: 2.6vw 2.6vw;
+    background-position: center;
+   
 }
 
 
@@ -68,6 +97,7 @@ background-repeat: no-repeat;
     0% {
         background-color: #7B0A00;
     }
+
     15% {
         background-color: #7B0A00;
     }
@@ -75,13 +105,16 @@ background-repeat: no-repeat;
     25% {
         background-color: #BE550D;
     }
+
     35% {
         background-color: #BE550D;
     }
-    60%{
+
+    60% {
         background-color: #E79C21;
     }
 
     100% {
         background-color: #E79C21;
-    }}
+    }
+}

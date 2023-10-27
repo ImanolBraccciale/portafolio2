@@ -14,14 +14,18 @@ import NavBar from "../components/NavBar/NavBar"
             <div className="cloud" style={{ marginLeft: "15vw" }}/>
             <div className="cloud" style={{ marginLeft: "75vw" }}/>
             <div className="brick"/>
-            <p className="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Magni enim exercitationem sit itaque, nobis eligendi qui cupiditate, culpa 
-            totam debitis ipsam dolor placeat excepturi nihil minus voluptas similique 
-            suscipit hic!</p>
+            <div className="containerP">
+            <div className="photoAbout"/>
+            <p className="p">Soy imanol bracciale, un apasionado de la informatica, los juegos y desafios.
+            Mi interes por la programación surgió con un continuo estudio autodidacta que me permitió entender
+            que para el aprendizaje lo unico que falta es el tiempo y lo que ams se encesita es esfuerzo.
+            Esto ultimo lo encuentro orgullosamente en mis proyectos que te invito a observar.
+             </p>
+            </div>
             <div className="containerButton">
 
              <button className="button linkedin" onClick={()=>{redirigir("https://www.linkedin.com/in/imanol-bracciale-2a5625206/")}} ></button>
-             <button className="button" onClick={()=>{redirigir("https://github.com/ImanolBraccciale")}} >Github</button>
+             <button className="button gitHUB" onClick={()=>{redirigir("https://github.com/ImanolBraccciale")}} ></button>
             </div>
         
            
