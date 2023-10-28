@@ -21,6 +21,8 @@
     position: absolute;
 }
 
+
+
 .containerP {
 
     display: flex;
@@ -75,21 +77,24 @@
     cursor: pointer;
 }
 
+
+
 .linkedin {
 
     background-image: url("../assets/1.png");
     background-repeat: no-repeat;
     background-size: 2vw 2vw;
     background-position: center;
-   
+
 }
+
 .gitHUB {
 
     background-image: url("../assets/git.png");
     background-repeat: no-repeat;
     background-size: 2.6vw 2.6vw;
     background-position: center;
-   
+
 }
 
 
