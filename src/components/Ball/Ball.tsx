@@ -20,9 +20,9 @@ const Ball: React.FC = () => {
 
   // Referencia al elemento <canvas>
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-      const collisionDivs = document.querySelectorAll(".collision-div");
   // useEffect se utiliza para efectos secundarios y ciclo de vida del componente
   useEffect(() => {
+    const collisionDivs = document.querySelectorAll(".collision-div");
     // Obtiene la referencia al elemento <canvas>
     const canvas = canvasRef.current;
     if (!canvas) {
