@@ -26,11 +26,11 @@ const Skills: React.FC = () => {
                         <div className="pelota" />
                     </div>
                     <ul className='lista'>
-                        <li>aaaaa</li>
-                        <li>saaaaa</li>
-                        <li>daaaa</li>
-                        <li>aaaas</li>
-                        <li>caaaa</li>
+                        <li>Express</li>
+                        <li>Sequelize</li>
+                        <li>PostgreSQL</li>
+                        <li>React</li>
+                        <li> .NET</li>
                     </ul>
                 </div>
 
@@ -45,11 +45,11 @@ const Skills: React.FC = () => {
                     <div className="pelota2" />
                     <div className="pelota2" />
                     <ul className='lista'>
-                        <li>aaaaa</li>
-                        <li>saaaaa</li>
-                        <li>daaaa</li>
-                        <li>aaaas</li>
-                        <li>caaaa</li>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Next.js</li>
+                        <li>Bootstrap</li>
+                        <li>CSS</li>
                     </ul>
                 </div>
                 <div className="ghost3">
@@ -63,11 +63,11 @@ const Skills: React.FC = () => {
                     <div className="pelota3" />
                     <div className="pelota3" />
                     <ul className='lista'>
-                        <li>aaaaa</li>
-                        <li>saaaaa</li>
-                        <li>daaaa</li>
-                        <li>aaaas</li>
-                        <li>caaaa</li>
+                        <li>SCRUM</li>
+                        <li>Github</li>
+                        <li>Figma</li>
+                        <li>Trello</li>
+                    
                     </ul>
                 </div>
             </div>

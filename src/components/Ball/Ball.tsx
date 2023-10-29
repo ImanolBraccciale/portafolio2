@@ -2,11 +2,11 @@ import React, { useEffect, useRef } from "react";
 
 const Ball: React.FC = () => {
   // Definición de constantes
-  const RADIUS = 7;
+  const RADIUS = 3;
   const WIDTH = window.innerWidth;
   const HEIGHT = window.innerHeight;
   const SPEED = 3;
-  const numBalls = 80; // Cantidad de pelotas
+  const numBalls = 1080; // Cantidad de pelotas
 
   // Genera un array de pelotas con posiciones iniciales y deltas (cambios de posición)
   const balls = Array.from({ length: numBalls }, (_, index) => ({
