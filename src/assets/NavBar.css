@@ -1,45 +1,104 @@
 .container {
+  z-index: 10;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navLink {
+  text-decoration: none;
+  outline: none;
+  color: #FFFF2E;
+  margin: 0 20px;
+  padding: 10px 25px;
+  border-radius: 23px;
+}
+
  
+
+.navLink:nth-child(1) {
+  border: 5px solid #C09C03;
+
+}
+
+.navLink:nth-child(2) {
+  border: 5px solid #4294FE;
+}
+
+.navLink:nth-child(3) {
+  border: 5px solid #21B202;
+}
+
+.navLink:nth-child(4) {
+  border: 5px solid #E25106;
+}
+
+
+@media (max-width: 820px) {
+
+  /* Mostrar el menú hamburguesa y ocultar la barra de navegación en pantallas más pequeñas */
+  .container {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
     background-color: #040404;
-    display: grid;
-    justify-content: end;
-    height: 16%;
-    align-items: center;
-    /* border: 1px solid #392AD7; */
-  }
-  
-  .navButtons {
-    margin-right: 90px;
-  }
-  
-  .navLink {
-    text-decoration: none;
-    outline: none;
-    color: #FFFF2E;
-    margin: 20px;
-    background-color: transparent;
-    padding: 10px 25px 10px 25px;
-    width: 150px;
-    height: 55px;
-    border-radius: 23px;
+    width: 100%;
+    text-align: right;
     position: relative;
-    z-index: 220;
+    padding: 20px;
   }
-  
-  .navLink:nth-child(1) {
-    border: 5px solid #C09C03;
-    
+
+  .menu-open {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
   }
-  
-  .navLink:nth-child(2) {
-    border: 5px solid #4294FE;
+
+  .navButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
   }
-  
-  .navLink:nth-child(3) {
-    border: 5px solid #21B202;
+
+  .navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    width: 20vw;
+    height: 10vw;
   }
-  
-  .navLink:nth-child(4) {
-    border: 5px solid #E25106;
+
+  .hamburger-icon {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  
+
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFF2E;
+    margin: 4px 0;
+  }
+}
