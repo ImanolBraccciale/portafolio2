@@ -66,7 +66,7 @@ z-index: 7;
 
 
 .pez span {
-  z-index: 1;
+  z-index: 0;
   background-image: url("../assets/pez.webp");
   background-size: contain;
   width: 5em;
