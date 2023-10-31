@@ -11,8 +11,9 @@ const NavBar: React.FC<{}> = () => {
   };
 
   return (
-    <div>
+    <div className="content">
       <div className={`  ${isMenuOpen ? "container menu-open" : "container"}`}>
+     
         <div className="navButtons">
           <Link to="/" className="navLink collision-div">
             Home

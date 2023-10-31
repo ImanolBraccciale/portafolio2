@@ -36,27 +36,22 @@ const Home: React.FC<{}> = () => {
 
     return (
         <div className="containerHoome">
-            <div className="p">
+
             <NavBar />
 
-            </div>
             <div className="pez">
-
                 <span style={style.span1} />
-
                 <span style={style.span2} />
                 <span style={style.span3} />
                 <span style={style.span4} />
                 <span style={style.span5} />
-
-
             </div>
             <div className="column">
                 <div className="texto">
 
-                    <h1 className="tittleHome">WELCOME <br/>
-                    TO MY 
-                    <br/>PORTFOLIO</h1>
+                    <h1 className="tittleHome">WELCOME <br />
+                        TO MY
+                        <br />PORTFOLIO</h1>
                     <p className="p1">
                         Soy Imanol Bracciale, desarrollador web.<br />
                         A través de este portafolio, te invito a explorar mi trabajo,
@@ -65,26 +60,26 @@ const Home: React.FC<{}> = () => {
                     </p>
 
                 </div>
-                 
+
             </div>
             <div className="game">
 
-                    <div className={`containerPacman ${animationStarted ? "animationStarted" : ""}`} onClick={startAnimation}>
-                        <div className="pacman" />
-                        <div className="pacman-mouth" />
-                    </div>
-                    <div className="coinContainer">
+                <div className={`containerPacman ${animationStarted ? "animationStarted" : ""}`} onClick={startAnimation}>
+                    <div className="pacman" />
+                    <div className="pacman-mouth" />
+                </div>
+                <div className="coinContainer">
 
-                        <div className={`coin ${animationStarted ? "invisible" : ""}`} />
-                        <div className={`coin1 ${animationStarted ? "invisible" : ""}`} />
-                        <div className={`coin2 ${animationStarted ? "invisible" : ""}`} />
-                        <div className={`coin3 ${animationStarted ? "invisible" : ""}`} />
-                        <div className={`coin4 ${animationStarted ? "invisible" : ""}`} />
-
-                    </div>
-
+                    <div className={`coin ${animationStarted ? "invisible" : ""}`} />
+                    <div className={`coin1 ${animationStarted ? "invisible" : ""}`} />
+                    <div className={`coin2 ${animationStarted ? "invisible" : ""}`} />
+                    <div className={`coin3 ${animationStarted ? "invisible" : ""}`} />
+                    <div className={`coin4 ${animationStarted ? "invisible" : ""}`} />
 
                 </div>
+
+
+            </div>
         </div>)
 }
 
