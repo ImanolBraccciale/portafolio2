@@ -66,6 +66,7 @@
   position: absolute;
   top: 20px; /* Añade espacio desde la parte superior */
   right: 20px;
+  z-index: 42;
   }
 
   .menu-open {

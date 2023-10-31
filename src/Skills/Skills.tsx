@@ -7,9 +7,9 @@ const Skills: React.FC = () => {
     return (
         <div >
             <div className="containerSkills">
+ 
+
             <NavBar />
-
-
                 <div className="containerGhost">
                     <div className="ghost-container">
                         <h3>Backend</h3>

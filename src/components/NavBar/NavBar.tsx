@@ -29,7 +29,7 @@ const NavBar: React.FC<{}> = () => {
           </Link>
         </div>
       </div>
-      <div className={`hamburger-menu ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu}>
+      <div className={`hamburger-menu collision-div ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

@@ -9,21 +9,33 @@ const Projects: React.FC = () => {
     }
     return (
         <div>
-            <Ball />
+
+               
             <div className="b">
                 <NavBar />
             </div>
-            <div className="containerProje">
-                <div className="Span1 collision-div" >
-                    <div className="projectsImage" />
-                    <h3 className="h3">Pokedex</h3>
-                    <div className="Containertags">
-                        <button className="pokeButton" onClick={() => { redirigir("https://github.com/ImanolBraccciale/Pi-Pokemon") }} />
-                    </div>
+            <Ball></Ball>
+            <div className="containerProje profundidad">
+   
 
+                    <div className="Span2 collision-div" >
+                        <div className="projectsImage" />
+                        <h3 className="h3">Pokedex</h3>
+                        <div className="Containertags">
+                            <button className="pokeButton" onClick={() => { redirigir("https://github.com/ImanolBraccciale/Pi-Pokemon") }} />
+                        </div>
+
+                    </div>
+                    <div className="Span2 collision-div" >
+                        <div className="projectsImage" />
+                        <h3 className="h3">Pokedex</h3>
+                        <div className="Containertags">
+                            <button className="pokeButton" onClick={() => { redirigir("https://github.com/ImanolBraccciale/Pi-Pokemon") }} />
+                        </div>
+
+                    </div>
                 </div>
-                <span className="Span2 collision-div" />
-            </div>
+           
         </div>
     )
 }

@@ -48,6 +48,7 @@ const Ball: React.FC = () => {
         const newx = ball.x + ball.delta.x;
         const newy = ball.y + ball.delta.y;
 
+        if (WIDTH > 820) {
         collisionDivs.forEach((collisionDiv) => {
           const rect = collisionDiv.getBoundingClientRect();
 
@@ -73,7 +74,7 @@ const Ball: React.FC = () => {
             }
           }
         });
-
+      }
 
         // Lógica de rebote en los bordes del canvas
         if (newx + RADIUS > WIDTH || newx - RADIUS < 0) {
@@ -113,7 +114,7 @@ const Ball: React.FC = () => {
         ref={canvasRef}
         className="canvas"
         style={{
-          position: "fixed",zIndex:1
+        position:"fixed"
         }}
         width={WIDTH}
         height={HEIGHT}
