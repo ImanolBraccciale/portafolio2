@@ -12,19 +12,19 @@ const About: React.FC<{}> = () => {
             <NavBar />
             <div>
 
-                <div className="cloud"  />
+                <div className="cloud" />
                 <div className="cloud" style={{ marginLeft: "15vw" }} />
             </div>
 
             <div className="brick" />
             <div className="containerP">
-            <div className="photoAbout" />
+                <div className="photoAbout" />
                 <p className="p">Soy imanol bracciale, un apasionado de la informatica, los juegos y desafios.
                     Mi interes por la programación surgió con un continuo estudio autodidacta que me permitió entender
                     que para el aprendizaje lo unico que falta es el tiempo y lo que ams se encesita es esfuerzo.
                     Esto ultimo lo encuentro orgullosamente en mis proyectos que te invito a observar.
                 </p>
-                
+
             </div>
             <div className="containerButton">
 
