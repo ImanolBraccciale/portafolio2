@@ -128,7 +128,6 @@ width: 90%;
   z-index: 100;
   background-color: aliceblue;
   width: 70px;
-  /* Ancho fijo en píxeles */
   height: 70px;
   border-radius: 50%;
 }
@@ -162,4 +161,7 @@ width: 90%;
   overflow: hidden;
   /* Oculta el contenido que excede el ancho del elemento */
   text-align: center;
+  color: #DFE183;
+  font-family: Inter;
+  font-size: 1.3em;
 }

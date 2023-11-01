@@ -31,6 +31,7 @@ const Home: React.FC<{}> = () => {
         },
         span2: {
             animation: "moveBackground 6s linear infinite",
+            left: 69 + "%"
         }
     }
 
