@@ -11,14 +11,95 @@
   z-index: 2;
 }
 
+@media (min-width: 820px) and (max-width: 1460px) {
+  .containerProje {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+  }
+  
+  .profundidad{
+    z-index: 2;
+  }
+
+
+
+  .b{
+    background-color: black;
+  }
+   
+  .Span2 {
+    width: 350px;
+    height: 350px;
+    border: 5px solid #402EF6;
+   
+    border-radius: 16px;
+    position: relative;
+  }
+  
+  .BALL{
+  z-index: 900;
+  }
+  
+  .projectsImage{
+    background-image: url("../assets/pok.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    height: 230px;
+    border-bottom:4px dashed #402EF6;
+  }
+  .h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFF2E;
+  
+  }
+  
+  .pokeButton{
+    background-image: url("../assets/git.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 55px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Containertags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+  }
+  
+  
+
+
+}
+
 @media (max-width: 820px) {
   .containerProje {
     background-color: #040404;
-    min-height: 150vh; 
+    height: 100vh;
     width: 100%;
    display: grid;
   }
-  
+  .profundidad{
+    z-index: 2;
+  }
+
+  .b{
+    background-color: black;
+  }
   .Span2 {
     width: 350px;
     height: 350px;
@@ -27,59 +108,47 @@
     position: relative;
     background-color: #3f2ef68f;
   }
-}
 
-.b{
-  background-color: black;
+  .BALL{
+    z-index: 900;
+    }
+    
+    .projectsImage{
+      background-image: url("../assets/pok.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    
+      height: 230px;
+      border-bottom:4px dashed #402EF6;
+    }
+    .h3{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFF2E;
+    
+    }
+    
+    .pokeButton{
+      background-image: url("../assets/git.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 55px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .Containertags{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    
+    }
+    
 }
  
-.Span2 {
-  width: 350px;
-  height: 350px;
-  border: 5px solid #402EF6;
- 
-  border-radius: 16px;
-  position: relative;
-}
-
-.BALL{
-z-index: 900;
-}
-
-.projectsImage{
-  background-image: url("../assets/pok.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  height: 230px;
-  border-bottom:4px dashed #402EF6;
-}
-.h3{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFFF2E;
-
-}
-
-.pokeButton{
-  background-image: url("../assets/git.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 55px;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.Containertags{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-
-}
-
