@@ -42,6 +42,14 @@
     height: 230px;
     border-bottom:4px dashed #402EF6;
   }
+  .projectsImage1{
+    background-image: url("../assets/rofe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 90%;
+    height: 230px;
+    border-bottom:4px dashed #402EF6;
+  }
   .h3{
     display: flex;
     align-items: center;
@@ -49,7 +57,17 @@
     color: #FFFF2E;
   
   }
-  
+  .web{
+    background-image: url("../assets/web.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 55px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
   .pokeButton{
     background-image: url("../assets/git.png");
     background-repeat: no-repeat;
@@ -64,7 +82,8 @@
   
   .Containertags{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+
     align-items: center;
     
   
@@ -130,10 +149,20 @@
       border: none;
       cursor: pointer;
     }
-    
+    .web{
+      background-image: url("../assets/web.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 55px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
     .Containertags{
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       
     
@@ -202,12 +231,23 @@
     border: none;
     cursor: pointer;
   }
-  
+  .web{
+    background-image: url("../assets/web.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 55px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+  }
   .Containertags{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    
+      
   
   }
   

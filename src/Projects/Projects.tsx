@@ -19,11 +19,14 @@ const Projects: React.FC = () => {
    
 
                     <div className="Span2 collision-div" >
-                        <div className="projectsImage" />
-                        <h3 className="h3">Pokedex</h3>
+                        <div  className="projectsImage1" />
+                        <h3 className="h3">Ferreteria</h3>
                         <div className="Containertags">
                             <button className="pokeButton" onClick={() => { redirigir("https://github.com/ImanolBraccciale/Pi-Pokemon") }} />
+    
+                            <button className="web" onClick={() => { redirigir("https://pf-ferreteria.vercel.app") }} />
                         </div>
+
 
                     </div>
                     <div className="Span2 collision-div" >
