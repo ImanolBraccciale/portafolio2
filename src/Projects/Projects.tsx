@@ -34,6 +34,7 @@ const Projects: React.FC = () => {
                         <h3 className="h3">Pokedex</h3>
                         <div className="Containertags">
                             <button className="pokeButton" onClick={() => { redirigir("https://github.com/ImanolBraccciale/Pi-Pokemon") }} />
+                            <button className="web" onClick={() => { redirigir("https://pokemon-rho-ruddy.vercel.app") }} />
                         </div>
 
                     </div>
