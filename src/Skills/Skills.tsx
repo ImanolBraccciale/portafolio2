@@ -25,10 +25,12 @@ const Skills: React.FC = () => {
                                 <div className="pelota" />
                             </div>
                             <ul className='lista'>
+                                
                                 <li>Express</li>
-                                <li>Sequelize</li>
+                                <li>AWS</li>
+                                <li>MongoDb</li>
                                 <li>PostgreSQL</li>
-                                <li>React</li>
+                                <li>Sequelize</li>
                                 <li>.NET</li>
                             </ul>
                         </div>
@@ -79,6 +81,7 @@ const Skills: React.FC = () => {
                                     <li>Github</li>
                                     <li>Figma</li>
                                     <li>Trello</li>
+                      
                                 </ul>
                             </div>
                         </div>
