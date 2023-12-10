@@ -54,10 +54,10 @@ const Home: React.FC<{}> = () => {
                         TO MY
                         <br />PORTFOLIO</h1>
                     <p className="p1">
-                        Soy Imanol Bracciale, desarrollador web.<br />
-                        A través de este portafolio, te invito a explorar mi trabajo,
-                        conocer mis logros y descubrir cómo mis habilidades
-                        y pasión se traducen en resultados tangibles.<br />
+                        I am Imanol Bracciale, a web developer.<br />
+                        Through this portfolio, I invite you to explore my work,
+                        discover my achievements, and see how my skills
+                        and passion translate into tangible results.<br />
                     </p>
 
                 </div>

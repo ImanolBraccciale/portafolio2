@@ -19,10 +19,9 @@ const About: React.FC<{}> = () => {
             <div className="brick" />
             <div className="containerP">
                 <div className="photoAbout" />
-                <p className="p">Soy imanol bracciale, un apasionado de la informatica, los juegos y desafios.
-                    Mi interes por la programación surgió con un continuo estudio autodidacta que me permitió entender
-                    que para el aprendizaje lo unico que falta es el tiempo y lo que ams se encesita es esfuerzo.
-                    Esto ultimo lo encuentro orgullosamente en mis proyectos que te invito a observar.
+                <p className="p">I am Imanol Bracciale, passionate about computer science, games, and challenges.
+My interest in programming arose from continuous self-study, which allowed me to understand that the only thing missing for learning is time, and the most important thing needed is effort.
+I proudly find this latter aspect in my projects, which I invite you to observe.
                 </p>
 
             </div>
