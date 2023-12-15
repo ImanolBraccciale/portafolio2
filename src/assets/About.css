@@ -99,7 +99,13 @@
          background-position: center;
 
      }
-
+     .CV{
+        
+        background-image: url("../assets/AAA.png");
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-position: center;
+    }
 
      @keyframes cambioColorFondo {
          0% {
@@ -231,6 +237,14 @@
         background-size: 24px 24px;
         background-position: center;
 
+    }
+
+    .CV{
+        
+        background-image: url("../assets/AAA.png");
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        background-position: center;
     }
 
      @keyframes cambioColorFondo {
@@ -367,7 +381,13 @@
 
      }
 
-
+     .CV{
+        
+        background-image: url("../assets/AAA.png");
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-position: center;
+    }
      @keyframes cambioColorFondo {
          0% {
              background-color: #7B0A00;

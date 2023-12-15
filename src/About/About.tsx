@@ -29,6 +29,7 @@ I proudly find this latter aspect in my projects, which I invite you to observe.
 
                 <button className="button linkedin" onClick={() => { redirigir("https://www.linkedin.com/in/imanol-bracciale-2a5625206/") }} ></button>
                 <button className="button gitHUB" onClick={() => { redirigir("https://github.com/ImanolBraccciale") }} ></button>
+                <button className="button CV" onClick={() => { redirigir("https://drive.google.com/file/d/1VxrumD6Zb68dpaMBc4qWENJZoPVwddue/view?usp=drive_link") }} />
             </div>
 
 
