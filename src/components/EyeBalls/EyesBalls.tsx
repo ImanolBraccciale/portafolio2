@@ -12,9 +12,8 @@ const Eye: React.FC<{ id: number }> = ({ id }) => {
             const iris = document.querySelector(`.iris-${id}`) as HTMLElement;
 
             if (eye && iris) {
-                //saco las dimensiones del contenedor ojo
+            
                 const boundingBox = eye.getBoundingClientRect();
-                //para posicionar las bolas en el medio
                 const eyeCenterX = boundingBox.left + boundingBox.width / 2;
                 const eyeCenterY = boundingBox.top + boundingBox.height / 2;
 
@@ -50,7 +49,6 @@ const Eye: React.FC<{ id: number }> = ({ id }) => {
             <div className={`eyes eyes-${id}`}>
                 <div className={`iris iris-${id}`} style={{ transform: `translate(${irisX}px, ${irisY}px)` }} />
             </div>
-
         </div>
     );
 }

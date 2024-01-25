@@ -99,7 +99,8 @@
     background-color: #040404;
     height: 100vh;
     width: 100%;
-   display: grid;
+    display: grid;
+    place-items: center;
   }
   .profundidad{
     z-index: 2;
@@ -109,6 +110,7 @@
     background-color: black;
   }
   .Span2 {
+    margin-top: 3em;
     width: 350px;
     height: 350px;
     border: 5px solid #402EF6;
@@ -126,7 +128,14 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-    
+      height: 230px;
+      border-bottom:4px dashed #402EF6;
+    }
+    .projectsImage1{
+      background-image: url("../assets/rofe.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       height: 230px;
       border-bottom:4px dashed #402EF6;
     }

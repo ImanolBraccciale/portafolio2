@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from "react";
 
 const Ball: React.FC = () => {
-  // Definición de constantes
+
   const RADIUS = 4;
   const WIDTH = window.innerWidth;
   const HEIGHT = window.innerHeight;
   const SPEED = 2;
-  const numBalls = 400; // Cantidad de pelotas
+  const numBalls = 400; 
 
-  // Genera un array de pelotas con posiciones iniciales y deltas (cambios de posición)
   const balls = Array.from({ length: numBalls }, (_, index) => ({
     x: WIDTH / 2,
     y: HEIGHT / 2,
@@ -18,19 +17,17 @@ const Ball: React.FC = () => {
     },
   }));
 
-  // Referencia al elemento <canvas>
+
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  // useEffect se utiliza para efectos secundarios y ciclo de vida del componenteaaa
+  
   useEffect(() => {
     const collisionDivs = document.querySelectorAll(".collision-div");
-    // Obtiene la referencia al elemento <canvas>
     const canvas = canvasRef.current;
     if (!canvas) {
       console.error("Canvas element not found.");
       return;
     }
 
-    // Obtiene el contexto 2D del canvas para dibujar
     const ctx = canvas.getContext("2d");
 
     if (!ctx) {
@@ -38,11 +35,9 @@ const Ball: React.FC = () => {
       return;
     }
 
-    // Función para animar las pelotas
     const animateBalls = () => {
       // Limpia el canvas en cada fotograma para eliminar el fotograma anterior
       ctx.clearRect(0, 0, WIDTH, HEIGHT);
-
       // Recorre todas las pelotas
       balls.forEach((ball) => {
         const newx = ball.x + ball.delta.x;

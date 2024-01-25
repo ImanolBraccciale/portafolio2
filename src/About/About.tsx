@@ -8,8 +8,9 @@ const About: React.FC<{}> = () => {
         window.open(url, "_blank", "noopener,noreferrer");
     }
     return (
-        <div className="containerAbout">
+        <div>
             <NavBar />
+        <div className="containerAbout">
             <div>
 
                 <div className="cloud" />
@@ -34,6 +35,7 @@ I proudly find this latter aspect in my projects, which I invite you to observe.
 
 
 
+        </div>
         </div>
     )
 }
