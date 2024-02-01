@@ -26,11 +26,12 @@ const Skills: React.FC = () => {
                             </div>
                             <ul className='lista'>
                                 
-                                <li>Express</li>
-                                <li>AWS</li>
-                                <li>MongoDb</li>
-                                <li>PostgreSQL</li>
-                                <li>Sequelize</li>
+                                <li>Nest.js</li>
+                                <li>Node.js</li>
+                                <li>C#</li>
+                                <li>.NET</li>
+                          
+                                
                                 <li>.NET</li>
                             </ul>
                         </div>
@@ -50,7 +51,9 @@ const Skills: React.FC = () => {
                                     <li>Redux</li>
                                     <li>Next.js</li>
                                     <li>Bootstrap</li>
-                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>TypeScript</li>
+                                    
                                 </ul>
                                 <div>
 
@@ -63,7 +66,7 @@ const Skills: React.FC = () => {
                     </div>
                     <div className="containerGhost">
                         <div className="ghost-container">
-                            <h3>Tools</h3>
+                            <h3>Data base & ORM</h3>
                             <div className="ghost3">
                                 <div className='containerEyes'>
                                     <Eye id={3} />
@@ -77,11 +80,11 @@ const Skills: React.FC = () => {
                                     <div className="pelota3" />
                                 </div>
                                 <ul className='lista'>
-                                    <li>SCRUM</li>
-                                    <li>Github</li>
-                                    <li>Figma</li>
-                                    <li>Trello</li>
-                      
+                                <li>Express</li>
+                                <li>MongoDb</li>
+                                <li>PostgreSQL</li>
+                                <li>Sequelize</li>
+                                <li>Prisma</li>
                                 </ul>
                             </div>
                         </div>

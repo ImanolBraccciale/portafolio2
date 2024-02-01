@@ -57,15 +57,14 @@ width: 90%;
 }
 
 .containerGhost h3 {
-  display: flex;
+  display: inline-block;
+  width: auto;
   justify-content: center;
   align-items: center;
   color: #FFFF2E;
   border: 4px solid #392AD7;
   border-radius: 16px;
-  width: 120px;
-  height: 60px;
-  padding: 10px;
+  padding: 1em;
 }
 
 
